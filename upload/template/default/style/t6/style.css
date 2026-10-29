@@ -1,0 +1,131 @@
+/*
+[name]Tianji Blue[/name]
+[iconbgcolor]#2B7ACD[/iconbgcolor]
+Powered by Discuz! X
+*/
+
+html { background: #ECFFE0 linear-gradient(#F2FAF7 0, #ECFFE0 110px) repeat-x; }
+::selection{ background-color: #2B7ACD; color: #FFF; }
+:focus { outline-color: #2B7ACD; }
+body { background: #ECFFE0 linear-gradient(#F2FAF7 0, #ECFFE0 110px) repeat-x; }
+.fc-p { color: #0099CC; }
+
+/* 全局链接：黑字 + 天机蓝悬停（覆盖 module.css 搜索区的全局泄漏规则） */
+a { color: #000; }
+	a:hover { color: #0099CC; text-decoration: underline; }
+#toptb { padding: 0; border-bottom: 1px solid #CDCDCD; }
+
+/* 导航条：经典天机蓝渐变（色值按天机论坛 nv.png 采样），白字粗体直角 */
+#nv { display: block; height: 33px; background: linear-gradient(#2E80D1 0%, #2B7ACB 55%, #2267B5 100%); }
+	#nv > ul { float: left; background-image: none; }
+	#nv li { float: left; height: 33px; margin: 0; border-radius: 0; line-height: 33px; font-size: 14px; font-weight: 700; }
+		#nv li:first-child, #nv li:first-child.a { margin-left: 0; }
+		#nv li a { float: left; padding: 0 15px; height: 33px; line-height: 33px; border-radius: 0; color: #FFF; }
+			#nv li a:focus-visible { outline-color: #FFF; }
+		#nv li.a { margin-left: 0; box-shadow: none; background: #1D5FA8; }
+			#nv li.a a { color: #FFF; }
+		#nv li a:hover { background-color: #004FA0; }
+		#nv li.hover a:hover, #nv li.hover a { background-color: #004FA0; }
+	#nv #qmenu { float: right; display: inline; margin: 4px 8px 0 0; padding: 0 10px; width: auto; height: 24px; line-height: 24px; text-align: center; color: #2B7ACD; font-weight: 700; background: #FFF; border-radius: 2px; }
+		#nv #qmenu:hover { text-decoration: none; }
+
+/* 搜索条 */
+#scbar { background-color: #E8EFF5; border-color: #E9EFF5; }
+	#scbar_btn { background-color: #2B7ACD; }
+#scform_srchtxt { border-color: #2B7ACD; }
+#scform_tb .a::before { border-bottom-color: #2B7ACD; }
+#scform_submit { background-color: #2B7ACD; }
+
+/* 区块标题栏与表头：经典蓝灰渐变 + 浅蓝边框 */
+.bm_h, .tl th, .tl td { border-bottom-color: #C2D5E3; }
+.bm_h { border-top-color: #FFF; border-bottom: 1px solid #C2D5E3; background: #E5EDF2 linear-gradient(#FFF 0%, #E5EDF2 100%); }
+	.bmw .bm_h { border-color: #C2D5E3; background: #E5EDF2 linear-gradient(#FFF 0%, #E5EDF2 100%); }
+	.fl .bm_h { border-width: 1px 0; border-style: solid; border-color: #C2D5E3; background: #E5EDF2 linear-gradient(#FFF 0%, #E5EDF2 100%); }
+	.bm_h .o img, .bm_h .o em { color: #2B7ACD; background: radial-gradient(#FFF 45%, transparent 45%); }
+.tl .th { margin-top: 1px; padding: 0 10px; border-bottom: 1px solid #C2D5E3; background: #E5EDF2 linear-gradient(#FFF 0%, #E5EDF2 100%); }
+
+/* 重定义 {SPECIALBG} */
+.bmn, .bm_h, td.pls, .ad td.plc, div.exfm, .tb a, .tb_h, .ttp li.a a, div.uo a, input#addsubmit_btn, #gh .bm .bm_h { background-color: #E5EDF2; }
+
+.ct2_a, .ct3_a { background-image: linear-gradient(#ECFFE0, #C2D5E3 30%, #C2D5E3 70%, #ECFFE0); }
+	.ct3_a .bm { background-color: transparent; }
+.tbn li.a { background: #E5EDF2 linear-gradient(#FFF 0%, #E5EDF2 100%); }
+	#nv_portal.pg_portalcp .ct2_a_r, #nv_forum.pg_post .ct2_a_r, #nv_group.pg_post .ct2_a_r { background-image: none; }
+
+/* 重定义 {SPECIALBORDER} */
+.bmn, .pg a, .pgb a, .pg strong, .card, .card .o, div.exfm  { border-color: #C2D5E3; }
+.pg strong { background-color: #2B7ACD; }
+.pnc, .tb .o, .tb .o a { background-color: #2B7ACD; }
+	.pnc, a.pnc, .tb .o { border-color: #2267B5; }
+	.pnc:active { background: #1D5FA8; }
+	.pnc:focus { box-shadow: 0 0 0 2px rgba(43, 122, 205, 0.25); }
+
+.mi #moodfm.hover textarea { border-color: #C2D5E3; }
+
+.ad td.pls { background-color: #C2D5E3; }
+.side_btn a svg { fill: #2B7ACD; }
+
+/* 重定义强调文字 */
+#qmenu, .fl .bm_h h2 a, .xi1, #um .new, .topnav .new, .sch .new, .el .ec .hot em, .pll .s a.joins, #diy_backup_tip .xi2 { color: #2B7ACD; }
+.pll .s a.go { color: #FFF; }
+.xi2, .xi2 a { color: #0099CC; }
+
+/* 重定义按钮 */
+.pgsbtn { background-color: #2B7ACD; }
+	.pgsbtn:hover { background-color: #1D5FA8; }
+	.pgsbtn:active { box-shadow: 0 0 0 3px rgba(43,122,205,0.25); }
+.el .ec .hot, .clct_list .xld .m { background-image: linear-gradient(0deg,#B8D4F0 40%,#E8F1FA 40%); }
+.pll .s { background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='60' height='89'%3e%3cpath fill='%23e8f1fa' d='M60 0v50c0 5.5-4.5 10-10 10H0V10C0 4.5 4.5 0 10 0z'/%3e%3cpath fill='%23b8d4f0' d='M60 65v19c0 2.75-2.25 5-5 5H0V70c0-2.75 2.25-5 5-5zM8 75l2.5 2.5L8 80h2l2.5-2.5L10 75z'/%3e%3c/svg%3e"); }
+
+/* 重定义 Tab */
+.tb .a a { border-bottom-color: #ECFFE0; background: #E5EDF2 linear-gradient(#FFF 0%, #E5EDF2 100%); }
+
+/* 重定义广播 */
+#uhd, #flw_header .bar { background-color: #F2F7FB; }
+	#uhd .tb a, #flw_header .bar { border-top-color: #E5EDF2; }
+	#uhd .tb .a a { border-bottom-color: #F2F7FB; }
+.flw_replybox { background-color: #F2F7FB; }
+	.flw_replybox .px, .flw_autopt, #flw_header .tedt { border-color: #C2D5E3; }
+#flw_post_extra .sec { border-color: #E5EDF2; background-color: #F2F7FB; }
+
+/* 重定义版块快速跳转和侧边导航 */
+#fjump_menu li.a a { background-color: #F2F7FB; }
+.bdl, .bdl dt, .bdl dd.bdl_a a { border-color: #C2D5E3; background-color: #F2F7FB; }
+.bdl dd.bdl_a a { color: #2B7ACD; }
+
+/* 重定义下拉菜单 */
+.p_pop a { border-bottom-color: #E5EDF2; }
+	.p_pop a:hover, .p_pop a.a, #sctype_menu .sca { background-color: #E5EDF2; color: #2B7ACD; }
+	.blk a:hover { background-color: transparent; }
+
+/* 重定义好友列表 */
+#nv_home .buddy li { background-color: transparent; border: none; }
+
+/* ============================================================
+   新增 UI 组件配色（胶囊导航 / 快捷导航气泡 / 统计页）
+   主色：#2B7ACD  当前项：#1D5FA8  悬停：#004FA0  强调：#0099CC
+   高亮底：#E5EDF2  高亮边框：#C2D5E3  页面底：#ECFFE0
+   ============================================================ */
+/* 导航条溢出渐隐：遮罩=导航底色，边缘阴影=当前项色 */
+#nv > ul { background-image: linear-gradient(to right, #2B7ACD 40%, transparent), linear-gradient(to left, #2B7ACD 40%, transparent), linear-gradient(to right, #1D5FA8, transparent), linear-gradient(to left, #1D5FA8, transparent); }
+
+/* 快捷导航气泡 */
+#qmenu_menu { border-color: #C2D5E3; }
+	#qmenu_menu.blk:before { background: #E5EDF2; color: #2B7ACD; }
+	#qmenu_menu ul.nav a:hover { background-color: #E5EDF2; color: #2B7ACD; }
+	#qmenu_menu #fjump_menu { border-top-color: #C2D5E3; }
+		#qmenu_menu #fjump_menu .jump_bdl li { border-color: #C2D5E3; }
+		#qmenu_menu #fjump_menu .jump_bdl p.bbda { border-bottom-color: #E5EDF2; }
+		#qmenu_menu #fjump_menu .jump_bdl p:not(.a) a:hover { background-color: #E5EDF2; color: #2B7ACD; }
+		#qmenu_menu #fjump_menu .jump_bdl p.a a { background-color: #E5EDF2; color: #2B7ACD; }
+		#qmenu_menu #fjump_menu .jump_bdl li::-webkit-scrollbar-thumb { background: #C2D5E3; }
+
+/* 统计页：图表配色由 static/js/stat.js 读取这些自定义属性 */
+.stat-page { --stat-c1: #2B7ACD; --stat-c2: #1D5FA8; --stat-c3: #0099CC; --stat-c6: #C2D5E3; --stat-grid: #E5EDF2; --stat-axis: #C2D5E3; --stat-pointer: #E5EDF2; }
+	.stat-kpi-num, .stat-metric b, .stat-mx .stat-mx-total { color: #2B7ACD; }
+	.stat-chip.on { border-color: #2B7ACD; background: #2B7ACD; }
+	.stat-rank li:nth-child(1) .stat-rank-no { background: #2B7ACD; }
+	.stat-rank-no, .stat-sort.on, .stat-sort:hover { color: #0099CC; }
+	.stat-chip:hover, .stat-range a:hover { border-color: #C2D5E3; background: #E5EDF2; color: #0099CC; }
+	.stat-rank li:hover, .stat-row:hover, .stat-mx tbody tr:hover td, .stat-mx tbody tr:hover .stat-mx-row { background: #E5EDF2; }
+	.stat-rank-no { background: #E5EDF2; }

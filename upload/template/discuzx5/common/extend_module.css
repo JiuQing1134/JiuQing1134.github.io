@@ -3,7 +3,7 @@
 #pt .y em {color:var(--dz-fa)}
 #pt .dz_pt_y a:hover {opacity:0.8}
 #an dt {display:block}
-.dz_ngbox {margin-bottom:15px;background:var(--dz-bgf);border:none;border-radius:var(--dz-radius-m);box-shadow:var(--dz-shadow)}
+.dz_ngbox {margin-bottom:15px;background:var(--dz-bgf);border:1px solid var(--dz-borderb);border-radius:var(--dz-radius-m);box-shadow:none}
 .category_l1, .category_l2, .category_l3, .category_l4 {background:none}
 #category_grid {border:none;border-radius:var(--dz-radius-m)}
 #category_grid h4 span {height:50px;border-radius:0 var(--dz-radius-s) var(--dz-radius-s) 0}
@@ -17,6 +17,8 @@
 .category_newlist li:hover:before {background:var(--dz-ahover)}
 .slidebox_grid {margin:18px auto;border-color:var(--dz-borderb);overflow:hidden}
 .flg .bm_h {margin:0 15px 15px}
+.fl .bm_h {border-bottom:1px solid var(--dz-borderd);background:linear-gradient(#FFF 0%, var(--dz-bgd) 100%)}
+.bm_h {background:linear-gradient(#FFF 0%, var(--dz-bgd) 100%);border-bottom:1px solid var(--dz-borderd)}
 .flg .bm_c {padding:0 15px 15px}
 .fl_tb td.fl_g {padding:15px;border-radius:var(--dz-radius-l)}
 .fl_tb td.fl_g:hover {background:var(--dz-bgc)}
@@ -49,9 +51,9 @@
 .tl th, .tl td {padding:15px 0;border-color:var(--dz-borderb)}
 .tl th.common {padding-right:10px}
 .emptb th, .emptb td, .emptb td.icn {padding:0}
-.tl .th{background: var(--dz-bgf);}
+.tl .th{background: linear-gradient(#FFF 0%, var(--dz-bgd) 100%);}
 
-.dz_bdl {float:left;background:var(--dz-bgf);border:none;border-radius:var(--dz-radius-m);box-shadow:var(--dz-shadow);overflow:hidden}
+.dz_bdl {float:left;background:var(--dz-bgf);border:1px solid var(--dz-borderb);border-radius:var(--dz-radius-m);box-shadow:none;overflow:hidden}
 .dz_bdl .tbn {margin:15px;font-size:14px}
 .dz_bdl .tbn h2 {margin-bottom:10px;padding-left:22px;color:var(--dz-ahot);background:url({STYLEIMGDIR}/svg/dz_ico_fava.svg) no-repeat 0 2px;background-size:18px}
 .dz_bdl .tbn h2 a {color:var(--dz-ahot)}
@@ -129,7 +131,7 @@
 .pbg2{background:var(--dz-bgc)}
 .pls .o li:before{float: none;}
 
-.pls {width:220px;background:var(--dz-bgf);border-right:1px solid var(--dz-borderb);border-radius:var(--dz-radius-m)}
+.pls {width:220px;background:var(--dz-bgd);border-right:1px solid var(--dz-borderb);border-radius:0}
 .pls .pi {margin:0 20px;padding:15px 0;font-size:14px;line-height:16px}
 .pls .pi .km_lname {margin-right:4px}
 .pls .pi a {color:var(--dz-fb)}
