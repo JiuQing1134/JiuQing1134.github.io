@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=1200" />
+<title>天机易学论坛 - 风水·六爻·八字·奇门 | Discuz! X5 天机蓝模板</title>
+<link rel="stylesheet" href="/preview/assets/default_common.css" />
+<link rel="stylesheet" href="/preview/assets/default_module.css" />
+<link rel="stylesheet" href="/preview/assets/t6_style.css" />
+<style>
+/* module.css 搜索区残留的 #ct { margin: 0 20px } 会把整个版面顶到左侧，演示页恢复居中 */
+#ct { margin: 0 auto; }
+</style>
+</head>
+<body id="nv_forum" class="pg_index">
+<div id="append_parent"></div>
+
+<!-- 顶部工具条 -->
+<div id="toptb" class="cl">
+	<div class="wp">
+		<div class="z"><a href="#">首页</a><a href="#">帮助</a><a href="#">导航</a></div>
+		<div class="y">
+			<a href="#">登录</a><a href="#">立即注册</a>
+		</div>
+	</div>
+</div>
+
+<!-- 页头 -->
+<div id="hd">
+	<div class="wp">
+		<div class="hdc cl">
+			<h2><a href="#" title="天机易学论坛">
+				<svg width="150" height="46" viewBox="0 0 150 46" xmlns="http://www.w3.org/2000/svg">
+					<circle cx="23" cy="23" r="18" fill="#2B7ACD"/>
+					<path d="M23 5a18 18 0 0 1 0 36z" fill="#ECFFE0"/>
+					<circle cx="23" cy="14" r="4" fill="#ECFFE0"/>
+					<circle cx="23" cy="32" r="4" fill="#2B7ACD"/>
+					<text x="52" y="30" font-family="微软雅黑, SimSun, sans-serif" font-size="22" font-weight="bold" fill="#2B7ACD">天机易学论坛</text>
+				</svg>
+			</a></h2>
+			<div class="fastlg cl">
+				<div class="y pns">
+					<table cellspacing="0" cellpadding="0">
+						<tbody>
+						<tr><td><label for="ls_username">用户名</label></td><td><input type="text" id="ls_username" class="px vm" placeholder="天机" /></td><td class="fastlg_l"><button type="button" class="pn vm" style="width:75px"><em>登录</em></button></td></tr>
+						<tr><td><label for="ls_password">密码</label></td><td><input type="password" id="ls_password" class="px vm" placeholder="••••••" /></td><td><a href="#" class="xi2 xw1">注册</a></td></tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<!-- 导航条 -->
+		<div id="nv">
+			<a href="#" id="qmenu">快捷导航</a>
+			<ul>
+				<li id="mn_portal"><a href="#">门户<span>Portal</span></a></li>
+				<li class="a" id="mn_forum"><a href="#">论坛<span>BBS</span></a></li>
+				<li id="mn_guide"><a href="#">高级看帖</a></li>
+				<li id="mn_search"><a href="#">高级搜索</a></li>
+				<li id="mn_collection"><a href="#">淘帖<span>Collection</span></a></li>
+			</ul>
+		</div>
+
+		<div id="mu" class="cl">
+			<ul class="cl current" id="snav_forum">
+				<li class="a"><a href="#">今日新帖</a></li>
+				<li><a href="#">热门主题</a></li>
+			</ul>
+		</div>
+
+		<!-- 搜索条 -->
+		<div id="scbar" class="cl">
+			<form id="scbar_form" method="post" autocomplete="off" action="#">
+				<table cellspacing="0" cellpadding="0">
+					<tbody>
+					<tr>
+						<td class="scbar_icon_td"></td>
+						<td class="scbar_txt_td"><input type="text" name="srchtxt" id="scbar_txt" class="xw1" placeholder="请输入搜索内容" /></td>
+						<td class="scbar_type_td"><a href="#" id="scbar_type" class="xg1">帖子</a></td>
+						<td class="scbar_btn_td"><button type="button" id="scbar_btn" class="pn pnc"><strong>搜索</strong></button></td>
+						<td class="scbar_hot_td"><div id="scbar_hot"><strong>热搜:</strong><a href="#">风水</a><a href="#">六爻</a><a href="#">八字</a><a href="#">奇门</a><a href="#">择日</a></div></td>
+					</tr>
+					</tbody>
+				</table>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div id="ct" class="wp cl ct2">
+
+<!-- 统计条 -->
+<div id="chart" class="bm bw0 cl">
+	<p class="chart z">今日: <em>38</em><span class="pipe">|</span>昨日: <em>52</em><span class="pipe">|</span>帖子: <em>26834</em><span class="pipe">|</span>会员: <em>1526</em><span class="pipe">|</span>欢迎新会员: <em><a href="#" class="xi2">易理通</a></em></p>
+	<div class="y"><a href="#" class="xi2">我的帖子</a><span class="pipe">|</span><a href="#" class="xi2">查看新帖</a></div>
+</div>
+
+<div class="mn">
+
+<!-- 分区：易学研究 -->
+<div class="fl bm">
+	<div class="bm bmw flg cl">
+		<div class="bm_h cl">
+			<span class="o"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M6 9L2 4h8z" fill="#2B7ACD"/></svg></span>
+			<h2><a href="#">≡ 易学研究</a></h2>
+		</div>
+		<div class="bm_c">
+			<table cellspacing="0" cellpadding="0" class="fl_tb">
+				<tbody>
+				<tr>
+					<td class="fl_icn">
+						<svg width="48" height="48" viewBox="0 0 48 48"><rect x="2" y="2" width="44" height="44" rx="6" fill="#E8F1FA" stroke="#C2D5E3"/><text x="24" y="30" text-anchor="middle" font-family="微软雅黑, SimSun, sans-serif" font-size="17" font-weight="bold" fill="#2B7ACD">风水</text></svg>
+					</td>
+					<td class="fl_g">
+						<dl>
+							<dt><a href="#">风水综合讨论</a></dt>
+							<dd><em>主题: 1286</em><em>帖数: 2.4万</em></dd>
+							<dd>版主: <a href="#" class="xi2">天机</a></dd>
+						</dl>
+					</td>
+					<td class="fl_i"><a href="#">今日: 12</a></td>
+				</tr>
+				<tr>
+					<td class="fl_icn">
+						<svg width="48" height="48" viewBox="0 0 48 48"><rect x="2" y="2" width="44" height="44" rx="6" fill="#E8F1FA" stroke="#C2D5E3"/><text x="24" y="30" text-anchor="middle" font-family="微软雅黑, SimSun, sans-serif" font-size="17" font-weight="bold" fill="#2B7ACD">六爻</text></svg>
+					</td>
+					<td class="fl_g">
+						<dl>
+							<dt><a href="#">六爻预测</a></dt>
+							<dd><em>主题: 960</em><em>帖数: 1.8万</em></dd>
+							<dd>版主: <a href="#" class="xi2">易水寒</a></dd>
+						</dl>
+					</td>
+					<td class="fl_i"><a href="#">今日: 8</a></td>
+				</tr>
+				<tr>
+					<td class="fl_icn">
+						<svg width="48" height="48" viewBox="0 0 48 48"><rect x="2" y="2" width="44" height="44" rx="6" fill="#E8F1FA" stroke="#C2D5E3"/><text x="24" y="30" text-anchor="middle" font-family="微软雅黑, SimSun, sans-serif" font-size="17" font-weight="bold" fill="#2B7ACD">八字</text></svg>
+					</td>
+					<td class="fl_g">
+						<dl>
+							<dt><a href="#">八字命理</a></dt>
+							<dd><em>主题: 742</em><em>帖数: 1.3万</em></dd>
+							<dd>版主: <a href="#" class="xi2">云中子</a></dd>
+						</dl>
+					</td>
+					<td class="fl_i"><a href="#">今日: 5</a></td>
+				</tr>
+				<tr>
+					<td class="fl_icn">
+						<svg width="48" height="48" viewBox="0 0 48 48"><rect x="2" y="2" width="44" height="44" rx="6" fill="#E8F1FA" stroke="#C2D5E3"/><text x="24" y="30" text-anchor="middle" font-family="微软雅黑, SimSun, sans-serif" font-size="17" font-weight="bold" fill="#2B7ACD">奇门</text></svg>
+					</td>
+					<td class="fl_g">
+						<dl>
+							<dt><a href="#">奇门遁甲</a></dt>
+							<dd><em>主题: 618</em><em>帖数: 1.1万</em></dd>
+							<dd>版主: <a href="#" class="xi2">素问</a></dd>
+						</dl>
+					</td>
+					<td class="fl_i"><a href="#">今日: 6</a></td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+<!-- 分区：天机专区 -->
+<div class="fl bm">
+	<div class="bm bmw flg cl">
+		<div class="bm_h cl">
+			<span class="o"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M6 9L2 4h8z" fill="#2B7ACD"/></svg></span>
+			<h2><a href="#">≡ 天机专区</a></h2>
+		</div>
+		<div class="bm_c">
+			<table cellspacing="0" cellpadding="0" class="fl_tb">
+				<tbody>
+				<tr>
+					<td class="fl_icn">
+						<svg width="48" height="48" viewBox="0 0 48 48"><rect x="2" y="2" width="44" height="44" rx="6" fill="#E8F1FA" stroke="#C2D5E3"/><text x="24" y="30" text-anchor="middle" font-family="微软雅黑, SimSun, sans-serif" font-size="17" font-weight="bold" fill="#2B7ACD">图书</text></svg>
+					</td>
+					<td class="fl_g">
+						<dl>
+							<dt><a href="#">天机图书</a></dt>
+							<dd><em>主题: 356</em><em>帖数: 8900</em></dd>
+							<dd>版主: <a href="#" class="xi2">天机</a></dd>
+						</dl>
+					</td>
+					<td class="fl_i"><a href="#">今日: 3</a></td>
+				</tr>
+				<tr>
+					<td class="fl_icn">
+						<svg width="48" height="48" viewBox="0 0 48 48"><rect x="2" y="2" width="44" height="44" rx="6" fill="#E8F1FA" stroke="#C2D5E3"/><text x="24" y="30" text-anchor="middle" font-family="微软雅黑, SimSun, sans-serif" font-size="17" font-weight="bold" fill="#2B7ACD">典籍</text></svg>
+					</td>
+					<td class="fl_g">
+						<dl>
+							<dt><a href="#">术数典籍</a></dt>
+							<dd><em>主题: 289</em><em>帖数: 7200</em></dd>
+							<dd>版主: <a href="#" class="xi2">易水寒</a></dd>
+						</dl>
+					</td>
+					<td class="fl_i"><a href="#">今日: 2</a></td>
+				</tr>
+				<tr>
+					<td class="fl_icn">
+						<svg width="48" height="48" viewBox="0 0 48 48"><rect x="2" y="2" width="44" height="44" rx="6" fill="#E8F1FA" stroke="#C2D5E3"/><text x="24" y="30" text-anchor="middle" font-family="微软雅黑, SimSun, sans-serif" font-size="17" font-weight="bold" fill="#2B7ACD">案例</text></svg>
+					</td>
+					<td class="fl_g">
+						<dl>
+							<dt><a href="#">案例研究</a></dt>
+							<dd><em>主题: 415</em><em>帖数: 9600</em></dd>
+							<dd>版主: <a href="#" class="xi2">云中子</a></dd>
+						</dl>
+					</td>
+					<td class="fl_i"><a href="#">今日: 4</a></td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+<!-- 帖子列表 -->
+<div class="tl">
+	<div class="bm">
+		<div class="bm_h cl"><h2>今日最新主题</h2></div>
+		<div class="tb">
+			<ul>
+				<li class="a"><a href="#">全部主题</a></li>
+				<li><a href="#">最新</a></li>
+				<li><a href="#">热门</a></li>
+				<li><a href="#">热帖</a></li>
+				<li><a href="#">精华</a></li>
+				<li class="o"><a href="#" class="pnc">发表新帖</a></li>
+			</ul>
+		</div>
+		<div class="bm_c">
+			<table cellspacing="0" cellpadding="0">
+				<thead><tr class="th">
+					<td class="icn"></td><th>主题</th><td class="by">作者</td><td class="num">回复/查看</td><td class="by">最后发表</td>
+				</tr></thead>
+				<tbody>
+				<tr><td class="icn"><a href="#" title="新主题"><svg width="17" height="14" viewBox="0 0 17 14"><path d="M0 1h6l2 2h9v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z" fill="#2B7ACD"/></svg></a></td>
+					<th><a href="#" class="xw1">【玄空飞星】三元九运与阳宅布局实例讲解</a></th>
+					<td class="by"><cite><a href="#">九卿</a></cite><em>2026-10-29</em></td>
+					<td class="num">25/320</td>
+					<td class="by"><cite><a href="#">天机</a></cite><em>2026-10-29 18:42</em></td>
+				</tr>
+				<tr><td class="icn"><a href="#" title="新主题"><svg width="17" height="14" viewBox="0 0 17 14"><path d="M0 1h6l2 2h9v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z" fill="#2B7ACD"/></svg></a></td>
+					<th><a href="#" class="xw1">【六爻求测】事业发展与财运走势占断</a></th>
+					<td class="by"><cite><a href="#">易水寒</a></cite><em>2026-10-29</em></td>
+					<td class="num">18/210</td>
+					<td class="by"><cite><a href="#">云中子</a></cite><em>2026-10-29 17:56</em></td>
+				</tr>
+				<tr><td class="icn"><a href="#" title="新主题"><svg width="17" height="14" viewBox="0 0 17 14"><path d="M0 1h6l2 2h9v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z" fill="#2B7ACD"/></svg></a></td>
+					<th><a href="#" class="xw1">【八字案例】从旺格官运走势一例</a></th>
+					<td class="by"><cite><a href="#">云中子</a></cite><em>2026-10-29</em></td>
+					<td class="num">32/410</td>
+					<td class="by"><cite><a href="#">素问</a></cite><em>2026-10-29 16:20</em></td>
+				</tr>
+				<tr><td class="icn"><a href="#" title="新主题"><svg width="17" height="14" viewBox="0 0 17 14"><path d="M0 1h6l2 2h9v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z" fill="#2B7ACD"/></svg></a></td>
+					<th><a href="#" class="xw1">【奇门遁甲】奇门测病实战复盘</a></th>
+					<td class="by"><cite><a href="#">素问</a></cite><em>2026-10-28</em></td>
+					<td class="num">14/180</td>
+					<td class="by"><cite><a href="#">易水寒</a></cite><em>2026-10-29 15:08</em></td>
+				</tr>
+				<tr><td class="icn"><a href="#" title="新主题"><svg width="17" height="14" viewBox="0 0 17 14"><path d="M0 1h6l2 2h9v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z" fill="#2B7ACD"/></svg></a></td>
+					<th><a href="#" class="xw1">【风水实例】商铺收银台位置调整实录</a></th>
+					<td class="by"><cite><a href="#">九卿</a></cite><em>2026-10-28</em></td>
+					<td class="num">22/290</td>
+					<td class="by"><cite><a href="#">天机</a></cite><em>2026-10-29 14:31</em></td>
+				</tr>
+				<tr><td class="icn"><a href="#" title="新主题"><svg width="17" height="14" viewBox="0 0 17 14"><path d="M0 1h6l2 2h9v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z" fill="#2B7ACD"/></svg></a></td>
+					<th><a href="#" class="xw1">【紫微斗数】命宫无主星格局分析</a></th>
+					<td class="by"><cite><a href="#">云中子</a></cite><em>2026-10-28</em></td>
+					<td class="num">9/150</td>
+					<td class="by"><cite><a href="#">九卿</a></cite><em>2026-10-29 11:47</em></td>
+				</tr>
+				<tr><td class="icn"><a href="#" title="新主题"><svg width="17" height="14" viewBox="0 0 17 14"><path d="M0 1h6l2 2h9v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z" fill="#2B7ACD"/></svg></a></td>
+					<th><a href="#" class="xw1">【择日】本月开市吉日一览</a></th>
+					<td class="by"><cite><a href="#">素问</a></cite><em>2026-10-27</em></td>
+					<td class="num">28/360</td>
+					<td class="by"><cite><a href="#">易水寒</a></cite><em>2026-10-29 10:12</em></td>
+				</tr>
+				<tr><td class="icn"><a href="#" title="新主题"><svg width="17" height="14" viewBox="0 0 17 14"><path d="M0 1h6l2 2h9v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z" fill="#2B7ACD"/></svg></a></td>
+					<th><a href="#" class="xw1">【易学杂谈】河图洛书与二进制</a></th>
+					<td class="by"><cite><a href="#">天机</a></cite><em>2026-10-27</em></td>
+					<td class="num">45/520</td>
+					<td class="by"><cite><a href="#">九卿</a></cite><em>2026-10-29 09:36</em></td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+</div>
+
+<!-- 侧边栏 -->
+<div class="sd">
+	<div class="bm">
+		<div class="bm_h cl"><h2>在线会员</h2></div>
+		<div class="bm_c">
+			<ul class="xl xl1">
+				<li><a href="#">天机</a></li>
+				<li><a href="#">易水寒</a></li>
+				<li><a href="#">九卿</a></li>
+				<li><a href="#">云中子</a></li>
+				<li><a href="#">素问</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="bm">
+		<div class="bm_h cl"><h2>版块导航</h2></div>
+		<div class="bm_c">
+			<ul class="bdl cl">
+				<li><dl class="a">
+					<dt><a href="#">易学研究</a></dt>
+					<dd class="bdl_a"><a href="#">风水综合讨论</a></dd>
+					<dd><a href="#">六爻预测</a></dd>
+					<dd><a href="#">八字命理</a></dd>
+					<dd><a href="#">奇门遁甲</a></dd>
+				</dl></li>
+				<li><dl>
+					<dt><a href="#">天机专区</a></dt>
+					<dd><a href="#">天机图书</a></dd>
+					<dd><a href="#">术数典籍</a></dd>
+					<dd><a href="#">案例研究</a></dd>
+				</dl></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="bm">
+		<div class="bm_h cl"><h2>最新回复</h2></div>
+		<div class="bm_c">
+			<ul class="xl xl1">
+				<li><a href="#" class="xi2">三元九运与阳宅布局实例讲解</a></li>
+				<li><a href="#">求测：事业发展与财运走势</a></li>
+				<li><a href="#" class="xi2">奇门测病实战复盘</a></li>
+				<li><a href="#">商铺收银台位置调整实录</a></li>
+				<li><a href="#" class="xi2">本月开市吉日一览</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+</div>
+
+<!-- 页脚 -->
+<div id="ft">
+	<div class="wp cl">
+		<div id="flk" class="y">
+			<p><a href="#">网站地图</a><span class="pipe">|</span><a href="#">举报</a><span class="pipe">|</span><a href="#">关于天机</a></p>
+			<p class="xs0">GMT+8, 2026-10-29 18:42</p>
+		</div>
+		<div id="frt">
+			<p>Powered by <strong><a href="https://www.discuz.vip" target="_blank" rel="noopener">Discuz!</a></strong> <em>X5.0</em></p>
+			<p class="xs0">&copy; 2001-2026 Discuz! Team.</p>
+		</div>
+	</div>
+</div>
+
+<!-- 预览说明 -->
+<div class="wp" style="padding:12px 0 24px;text-align:center;font-size:12px;color:#666;">
+	<p>
+		本页为模板静态预览：<strong>template/default</strong> · <strong style="color:#2B7ACD;">t6 天机蓝</strong>（默认配色）
+		· <a href="x5.html" class="xi2">查看 discuzx5 模板预览</a>
+		· <a href="https://github.com/JiuQing1134/JiuQing1134.github.io/blob/MitFrame_Intl/README.md" class="xi2">项目 README</a>
+	</p>
+	<p>完整论坛功能需部署 Discuz! X5（PHP 环境）；本演示页由 preview/compile.py 从 upload/template 编译生成。</p>
+</div>
+
+</body>
+</html>
